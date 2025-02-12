@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste - SENAI - Admin</title>
+    <link rel="stylesheet" href="/src/Styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="Navbar">
+            <div class="navbar-container">
+                <img class="senai-logo" src="/assets/f9b3a5180a879b555b4e5c9264ac2541.png" alt="Logo da Senai">
+                <button class="mobile-view">Clique para visualizar a versão Mobile.</button>
+                <img class="acessibilidade-icon" src="/assets/ICON ACESSIBILIDADE.png" alt="Acessibilidade">
+            </div>
+            <div class="header-fixo">
+                <ul class="header-menu">
+                    <li class="header-botao"><a href="#projeto">Sobre o Projeto</a></li>
+                    <li class="header-botao"><a href="#inscricoes">Inscrições</a></li>
+                    <li class="header-botao"><a href="/src/pages/formAdm.html">Painel Adm</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+        <img class="banner-img" src="/assets/7ce34a60e0fdde5c1ad5b8915bbceb49.png" alt="MS Pela Vida.">
+    </div>
+    </header>
+    <main>
+        <div class="principal-container">
+            <div class="slides">
+                <img class="slide" src="/assets/slide1.jpg" alt="Imagem do projeto">
+                <img class="slide" src="/assets/slide2.jpg" alt="Imagem do projeto">
+                <img class="slide" src="/assets/slide3.jpg" alt="Imagem do projeto">
+                <div class="botoes-slide">
+                    <button onclick="slideAnt()">&#10094</button>
+                    <button onclick="proxSlide()">&#10095</button>
+                </div>
+            </div>
+            <div class="projeto-container" id="projeto">
+                <h1 class="titulo-projeto">Campanha MS Pela Vida já enviou mais de 50 toneladas de doações ao RS e em breve SENAI MS tomará a frente nos reparos de danos</h1>
+                <p class="texto-projeto">Após uma semana de operação, a campanha MS Pela Vida - Unidos pelo Rio Grande do Sul contabiliza números superlativos. Mais de 213 mil itens básicos doados pela população sul-mato-grossense abastecem caminhões e aeronaves que partem diariamente com destino ao sul do país, em socorro às vítimas do maior desastre ambiental em solo gaúcho. Mais de 50 toneladas de donativos já foram enviadas ao sul do país, em uma ação que contou com o trabalho de 1,5 mil voluntários até o momento.</p>
+                <p class="texto-projeto">O Presidente da FIEMS, Sérgio Longen, comenta os próximos passos da campanha: "A catástrofe do Rio Grande do Sul nos traz um alerta para o clima. Precisamos entender essa mensagem e avaliar como implementar ações que evitem essa realidade em mais ocasiões. <span> agora a tarefa de casa brasileiro é atuar em socorro ao Rio Grande do Sul, e por este motivo em breve o SENAI tomará a linha de frente na luta para reparar os danos nas cidades gaúchas.</span></p>     
+            </div>
+        </div>
+        <div class="container-secundario">
+            <div class="projeto-container-secundario">
+                <div class="texto-projeto-container">
+                    <h1 class="titulo-projeto">Próximos passos para reconstruir o RS</h1>
+                    <p class="texto-projeto">Mais do que arrecadações, é importante oferecer esperança de recomeço às famílias que perderam tudo nas enchentes do Rio Grande do Sul. Neste sentido, o Sistema Fiems, por meio do Senai, está enviando duas unidades móveis para serem enviadas às cidades atingidas pelo desastre climático com serviços de eletrotécnica e marcenaria.</p>
+                    <p class="texto-projeto">A expectativa é enviar inicialmente uma equipe 26 pessoas,<span> engenheiros, professores e técnicos.</span></p>
+                    <span class="texto-projeto-span">Tem interesse em se voluntariar? Preencha o formulário e se inscreva para ajuda as vítimas da maior catástrofe natural do Sul do país.</span>
+                    <button class="botao-voluntario" id="inscricoes">Quero participar</button>
+                </div>
+                <div class="imagem">
+                    <img class="Imagem-secundario" src="/assets/imagemcaminhao.png" alt="Imagem do projeto">
+                </div>
+            </div>
+        </div>
+        <div class="Imagem-terciario-container">
+            <img class="Imagem-terciario" src="/assets/imageESG.png" alt="Imagem do projeto">
+        </div>
+        <footer>
+            <div class="container-footer">
+                <div class="botoes-footer-container">
+                <button class="botoes-footer">Termos de Uso</button>
+                <p>|</p>
+                <button class="botoes-footer">Política de Privacidade</button>
+                </div>
+                <img class="logo-footer" src="/assets/f9b3a5180a879b555b4e5c9264ac2541.png" alt="Logo da Senai">
+            </div>
+            <p>VOCE É ADM!!!!</p>
+        </footer>
+    </main>
+    <script src="/src/js/index.js"></script>
+</body>
+</html>

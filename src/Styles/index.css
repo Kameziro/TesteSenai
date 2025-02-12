@@ -223,3 +223,31 @@ span {
     align-items: center;
     object-fit: fill;
 }
+
+.container-footer {
+    background-color: #183FFF;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.botoes-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 37.5rem;
+}
+
+.botoes-footer {
+    background:none;
+    border: 0;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+
+.logo-footer {
+    background-color: #FFFFFF;
+}
