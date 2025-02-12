@@ -208,6 +208,9 @@ span {
     width: 20rem;
     color: #FFFFFF;
     background-color: #4169E1;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .container-terciario {
