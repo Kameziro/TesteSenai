@@ -34,3 +34,5 @@ Inicialmente, o projeto estará sem voluntários na tabela dentro do banco de da
 ![Captura de tela 2025-02-12 151651](https://github.com/user-attachments/assets/680c2bc8-512f-4318-8f03-2903d536a9a9)
 <br>
 No final da página de administradores, haverá uma lista de voluntários onde será possível editar ou deletar.
+<br>
+Para abrir o site, é recomendado o uso da extensão Live Server do VS Code.

@@ -92,8 +92,16 @@ async function editRegistro(id) {
 
 async function deleteRegistro(id) {
     try {
-        await fetch(`http://localhost:3001/delete?id=${id}`);
-        await populateTable(); 
+        const response = await fetch(`http://localhost:3001/delete?id=${id}`, {
+            method: 'DELETE'
+        });
+        if (response.ok) {
+            const tableBody = document.getElementById('tableBody');
+            tableBody.innerHTML = ''; // Clear the table body
+            await populateTable(); // Repopulate the table
+        } else {
+            console.error('Failed to delete registro:', response.statusText);
+        }
     } catch (error) {
         console.error('Error deleting registro:', error);
     }

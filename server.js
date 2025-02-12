@@ -82,13 +82,19 @@ app.get('/validateVoluntario', async (req, res) => {
     }
 });
 
-app.get('/delete', async (req, res) => {
-    await db.registros.destroy({
-        where: {
-            id: 1
-        }
-    });
-    res.send('Usuário deletado com sucesso');
+app.delete('/delete', async (req, res) => {
+    const { id } = req.query;
+    try {
+        await db.registros.destroy({
+            where: {
+                id: id
+            }
+        });
+        res.send('Usuário deletado com sucesso');
+    } catch (error) {
+        console.error('Error deleting registro:', error);
+        res.status(500).send('Failed to delete registro');
+    }
 });
 
 app.get('/getVoluntario', async (req, res) => {
