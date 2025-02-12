@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste - SENAI - Admin</title>
-    <link rel="stylesheet" href="/src/Styles/index.css">
+    <link rel="stylesheet" href="/src/Styles/indexAdmin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
                     <p class="texto-projeto">Mais do que arrecadações, é importante oferecer esperança de recomeço às famílias que perderam tudo nas enchentes do Rio Grande do Sul. Neste sentido, o Sistema Fiems, por meio do Senai, está enviando duas unidades móveis para serem enviadas às cidades atingidas pelo desastre climático com serviços de eletrotécnica e marcenaria.</p>
                     <p class="texto-projeto">A expectativa é enviar inicialmente uma equipe 26 pessoas,<span> engenheiros, professores e técnicos.</span></p>
                     <span class="texto-projeto-span">Tem interesse em se voluntariar? Preencha o formulário e se inscreva para ajuda as vítimas da maior catástrofe natural do Sul do país.</span>
-                    <button class="botao-voluntario" id="inscricoes">Quero participar</button>
+                    <a class="botao-voluntario" href="/src/pages/formVoluntario.html" id="inscricoes">Quero participar</a>
                 </div>
                 <div class="imagem">
                     <img class="Imagem-secundario" src="/assets/imagemcaminhao.png" alt="Imagem do projeto">
@@ -63,9 +63,31 @@
         <div class="Imagem-terciario-container">
             <img class="Imagem-terciario" src="/assets/imageESG.png" alt="Imagem do projeto">
         </div>
-        <p>VOCE É ADM!!!!</p>
-        <p>VOCE É ADM!!!!</p>
-        <p>VOCE É ADM!!!!</p>
+        <div class="container-admin">
+            <div class="painel-adm">
+                <h1>&#9881 Painel do ADM</h1>
+                <a class="botao-adm" href="/index.html">Fazer Logoff</a>
+            </div>
+            <div class="tabela-voluntario-container">
+                <h2>Relatórios de Inscrições</h2>
+                <table id="tableVoluntario" class="tableVoluntario">
+                    <thead>
+                        <tr>
+                            <th class="tabela-dados">Data</th>
+                            <th class="tabela-dados">CPF</th>
+                            <th class="tabela-dados">Nome</th>
+                            <th class="tabela-dados">E-mail</th>
+                            <th class="tabela-dados">Celular</th>
+                            <th class="tabela-dados">Casa</th>
+                            <th class="tabela-dados">Especialização</th>
+                            <th class="tabela-dados">Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
         <footer>
             <div class="container-footer">
                 <div class="botoes-footer-container">
@@ -77,6 +99,6 @@
             </div>
         </footer>
     </main>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/indexAdm.js"></script>
 </body>
 </html>

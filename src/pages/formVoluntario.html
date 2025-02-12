@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/Styles/formAdm.css">
+    <link rel="stylesheet" href="/src/Styles/formVoluntario.css">
     <script defer src="./index.js"></script>
 </head>
 <body>
@@ -37,10 +37,29 @@
                 <input id="celular"name="celular" type="text" placeholder="(67) 99999-9999">
                 <div class="error"></div>
             </div>
+            <div class="input-control">
+                <label for="especializacao">Especialização</label>
+                <select id="especializacao" name="especializacao">
+                    <option value="Professor">Professor</option>
+                    <option value="Tecnico">Técnico</option>
+                    <option value="Engenheiro">Engenheiro</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="casa">Casa</label>
+                <select id="casa" name="casa">
+                    <option value="fiems">FIEMS</option>
+                    <option value="sesi">SESI</option>
+                    <option value="iel">IEL</option>
+                    <option value="senai">SENAI</option>
+                </select>
+                <div class="error"></div>
+            </div>
         </div>
-        <button type="submit">Fazer Login</button>
+        <button type="submit">Fazer Inscrição</button>
         </form>
     </div>
-    <script src="/src/js/validacao.js"></script>
+    <script src="/src/js/validacaoVoluntario.js"></script>
 </body>
 </html>

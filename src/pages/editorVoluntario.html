@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Voluntário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/Styles/formVoluntario.css">
+    <script defer src="/src/js/editarVoluntario.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="/index.html">&#8592 Voltar</a>
+        <img src="/assets/f9b3a5180a879b555b4e5c9264ac2541.png" alt="logo">
+        <div class="container-form">
+        <form id="form" action="/">
+            <h1>Editar Voluntário na Campanha MS Pela Vida</h1>
+            <div class="input-control">
+                <label for="cpf">CPF</label>
+                <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" readonly>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="nomeCompleto">Nome Completo</label>
+                <input id="nomeCompleto" name="nomeCompleto" type="text" placeholder="Informe seu nome">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Informe seu e-mail institucional">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="celular">Celular</label>
+                <input id="celular" name="celular" type="text" placeholder="(67) 99999-9999">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="especializacao">Especialização</label>
+                <select id="especializacao" name="especializacao">
+                    <option value="Professor">Professor</option>
+                    <option value="Tecnico">Técnico</option>
+                    <option value="Engenheiro">Engenheiro</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="casa">Casa</label>
+                <select id="casa" name="casa">
+                    <option value="fiems">FIEMS</option>
+                    <option value="sesi">SESI</option>
+                    <option value="iel">IEL</option>
+                    <option value="senai">SENAI</option>
+                </select>
+                <div class="error"></div>
+            </div>
+        </div>
+        <button type="submit">Atualizar</button>
+        </form>
+    </div>
+</body>
+</html>

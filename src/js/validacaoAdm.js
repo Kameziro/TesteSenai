@@ -2,11 +2,17 @@ const form = document.getElementById('form');
 const cpf = document.getElementById('cpf');
 const senha = document.getElementById('senha');
 
-form.addEventListener('submit', e => {	
+form.addEventListener('submit', async e => {	
     e.preventDefault();
     validateInputs();
     if (isFormValid()) {
-        window.location.replace("/src/pages/indexAdmin.html");
+        const isValid = await validateAdmin(cpf.value, senha.value);
+        if (isValid) {
+            window.location.replace("/src/pages/indexAdmin.html");
+        } else {
+            setError(cpf, 'CPF ou senha inválidos');
+            setError(senha, 'CPF ou senha inválidos');
+        }
     }
 });
 
@@ -63,4 +69,13 @@ function isFormValid(){
     });
     return result;
 }
+
+async function validateAdmin(cpf, senha) {
+    const response = await fetch(`http://localhost:3001/validateAdministrador?cpf=${cpf}&senha=${encodeURIComponent(senha)}`);
+    const data = await response.json();
+    console.log(`validação resultado: ${data.valid}`); 
+    return data.valid;
+}
+
+
 
