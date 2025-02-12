@@ -44,6 +44,5 @@ const validateInputs = () => {
     }
 
     if(senha.classList.contains('success') && cpf.classList.contains('success')) {
-        window.location.replace("/src/pages/indexAdmin.html");
     }
 };
